@@ -1,1 +1,3 @@
-test for query multiple paths, unit, etc.
+test for querying multiple paths, unit, etc.
+
+[test](tests/src/integration_tests.rs)

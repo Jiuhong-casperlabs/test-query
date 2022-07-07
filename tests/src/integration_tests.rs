@@ -19,7 +19,7 @@ mod tests {
     const CONTRACT_WASM: &str = "contract.wasm";
 
     #[test]
-    fn should_store_hello_world() {
+    fn should_query() {
         // Create keypair.
         let secret_key = SecretKey::ed25519_from_bytes(MY_ACCOUNT).unwrap();
         let public_key = PublicKey::from(&secret_key);
