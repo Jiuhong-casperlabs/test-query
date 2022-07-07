@@ -1,0 +1,81 @@
+casper-client put-deploy \
+--chain-name casper-net-1 \
+-n http://localhost:11101/rpc \
+--session-path contract/target/wasm32-unknown-unknown/release/contract.wasm \
+--secret-key /home/jh/casper-node/utils/nctl/assets/net-1/faucet/secret_key.pem \
+--payment-amount 100000000000
+
+
+lockedcontracthash
+hash-4fb6660436a6aef840033adb9ecbc537fad8a7c231fbcb8aced193bc7da49d6b
+
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+        "api_version": "1.0.0",
+        "stored_value": {
+            "ContractPackage": {
+                "access_key": "uref-fbf409cf6c6526f75ac573c07d2f92a54edbb94831860b80d481ab90e3e7bda6-007",
+                "versions": [
+                    {
+                        "protocol_version_major": 1,
+                        "contract_version": 1,
+                        "contract_hash": "contract-4fb6660436a6aef840033adb9ecbc537fad8a7c231fbcb8aced193bc7da49d6b"
+                    }
+                ],
+                "disabled_versions": [],
+                "groups": []
+            }
+        }
+        "stored_value": {
+            "Contract": {
+                "contract_package_hash": "contract-package-wasm31d92e5afaa3cd7d23a0b8eafd04755c0880a41b530490be59621d54500a43fc",
+                "contract_wasm_hash": "contract-wasm-d16b6cac4e1df8a3d3f83c0f6bf67b93c9835934545fdde20ddb62d58b94f77b",
+                "named_keys": [],
+                "entry_points": [
+                    {
+                        "name": "test",
+                        "args": [],
+                        "ret": "Unit",
+                        "access": "Public",
+                        "entry_point_type": "Contract"
+                    }
+                ],
+                "protocol_version": "1.0.0"
+            }
+        },
+
+contracthash
+hash-9a240d5f10f8e9c068d229dd903fa0c2c3df348a4d13b2530cef21bbe092fff5
+
+        "stored_value": {
+            "Contract": {
+                "contract_package_hash": "contract-package-wasmb6f7f3452de9c7985577ec34bd7231e1a4c0d756c259b845b22c0b679c319d03",
+                "contract_wasm_hash": "contract-wasm-85199ed8491113a312227753eb5e8b489777b4f36a6410c7bcf003bb6656d04a",
+                "named_keys": [],
+                "entry_points": [
+                    {
+                        "name": "test",
+                        "args": [],
+                        "ret": "Unit",
+                        "access": "Public",
+                        "entry_point_type": "Contract"
+                    }
+                ],
+                "protocol_version": "1.0.0"
+
+        "stored_value": {
+            "ContractPackage": {
+                "access_key": "uref-5fd7a54e9d27039ac5b03ec404a458a07b2c0f653e1be639ce2b473ac6378c67-007",
+                "versions": [
+                    {
+                        "protocol_version_major": 1,
+                        "contract_version": 1,
+                        "contract_hash": "contract-9a240d5f10f8e9c068d229dd903fa0c2c3df348a4d13b2530cef21bbe092fff5"
+                    }
+                ],
+                "disabled_versions": [],
+                "groups": []
+            }
+        },
